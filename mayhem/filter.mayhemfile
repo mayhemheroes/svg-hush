@@ -1,0 +1,7 @@
+project: svg-hush
+target: filter
+
+cmds:
+  - cmd: /filter
+  - cmd: /filter_no_inst @@
+    libfuzzer: false
