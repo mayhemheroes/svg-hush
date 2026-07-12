@@ -1,0 +1,10 @@
+project: svg-hush
+target: filter
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/filter/testsuite
+
+cmds:
+  - cmd: /mayhem/filter
+    libfuzzer: true
